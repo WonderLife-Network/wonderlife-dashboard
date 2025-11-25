@@ -1,0 +1,28 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.form label {
+    margin-top: 15px;
+    color: #ff00d4;
+}
+
+.form input, .form select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.btn {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg,#a44cff,#ff00d4);
+    color: white;
+    cursor: pointer;
+}

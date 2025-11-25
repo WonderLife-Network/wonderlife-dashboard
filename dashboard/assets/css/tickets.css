@@ -1,0 +1,22 @@
+.ticket-filters a {
+    padding: 8px 14px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.ticket-filters a.active {
+    background: linear-gradient(90deg, #a44cff, #ff00d4);
+}
+
+.status-open {
+    color: #4cff4c;
+    font-weight: bold;
+}
+
+.status-closed {
+    color: #ff4c4c;
+    font-weight: bold;
+}

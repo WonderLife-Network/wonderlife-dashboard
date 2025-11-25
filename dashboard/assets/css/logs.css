@@ -1,0 +1,34 @@
+.log-filters a {
+    padding: 8px 14px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.log-filters a.active {
+    background: linear-gradient(90deg,#a44cff,#ff00d4);
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    color: white;
+}
+
+.table th {
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+}
+
+.table td {
+    background: rgba(255,255,255,0.04);
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.table tr:hover td {
+    background: rgba(255,255,255,0.15);
+}

@@ -1,0 +1,44 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+}
+
+.table th {
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+}
+
+.table td {
+    padding: 10px;
+    background: rgba(255,255,255,0.04);
+}
+
+.status-online {
+    color: #4cff4c;
+    font-weight: bold;
+}
+
+.status-maint {
+    color: #ffdd33;
+    font-weight: bold;
+}
+
+.status-off {
+    color: #ff4c4c;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 6px 12px;
+    background: #a44cff;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #ff00d4;
+}

@@ -1,0 +1,41 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+}
+
+.table th {
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+}
+
+.table td {
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+}
+
+.btn {
+    padding: 6px 12px;
+    background: #a44cff;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #ff00d4;
+}
+
+.btn-danger {
+    padding: 6px 12px;
+    background: #e63946;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #ff0000;
+}

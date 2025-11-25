@@ -1,0 +1,39 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.06);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 20px #a44cff40;
+}
+
+.card h3 {
+    color: #ff00d4;
+}
+
+.card p {
+    font-size: 26px;
+    color: white;
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    color: white;
+}
+
+.table th {
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+}
+
+.table td {
+    padding: 10px;
+    background: rgba(255,255,255,0.04);
+}

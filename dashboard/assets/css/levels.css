@@ -1,0 +1,33 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+}
+
+.table th {
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+}
+
+.table td {
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+}
+
+.btn {
+    padding: 6px 12px;
+    background: #a44cff;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 6px;
+}
+
+.btn-danger {
+    padding: 6px 12px;
+    background: #e63946;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
