@@ -1,0 +1,14 @@
+<?php
+require "../../config.php";
+header("Content-Type: application/json");
+
+$user_id = $_GET["user_id"] ?? null;
+if (!$user_id) die(json_encode(["error"=>"NO_USER"]));
+
+$stmt = $db->prepare("SELECT * FROM notes WHERE user_id=? ORDER BY id DESC");
+$stmt->execute([$user_id]);
+
+echo json_encode([
+    "status"=>"OK",
+    "notes"=>$stmt->fetchAll(PDO::FETCH_ASSOC)
+]);

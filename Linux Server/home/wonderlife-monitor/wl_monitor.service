@@ -1,0 +1,12 @@
+[Unit]
+Description=WonderLife Server Monitor
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /home/wonderlife-monitor/monitor.js
+Restart=always
+User=root
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

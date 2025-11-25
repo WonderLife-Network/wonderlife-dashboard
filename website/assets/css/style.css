@@ -1,0 +1,414 @@
+/* ---------------------------------------------------------
+   WONDERLIFE NETWORK – NEON STYLE
+   ----------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+:root {
+    --bg-dark: #0b0b10;
+    --bg-card: rgba(20,20,30,0.55);
+    --neon-main: #A44CFF;
+    --neon-pink: #FF00D4;
+    --text-light: #ffffff;
+    --text-muted: #999;
+    --radius: 14px;
+    --shadow-neon: 0 0 20px rgba(164,76,255,0.7);
+    --shadow-pink: 0 0 18px rgba(255,0,212,0.6);
+}
+
+/* GLOBAL ---------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* HEADER ---------------------------------------------------- */
+
+.wl-header {
+    width: 100%;
+    padding: 20px 40px;
+    background: rgba(10,10,20,0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.wl-header .logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--neon-main);
+    text-shadow: var(--shadow-neon);
+}
+
+.wl-header nav a {
+    color: var(--text-light);
+    margin-left: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.wl-header nav a:hover {
+    color: var(--neon-pink);
+    text-shadow: var(--shadow-pink);
+}
+
+/* MAIN ------------------------------------------------------- */
+
+.wl-main {
+    padding: 40px;
+}
+
+/* HERO SECTION ---------------------------------------------- */
+
+.hero {
+    text-align: center;
+    padding: 100px 40px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 800;
+    background: linear-gradient(90deg,var(--neon-main),var(--neon-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: var(--shadow-neon);
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--text-muted);
+}
+
+.btn-glow {
+    margin-top: 40px;
+    padding: 15px 35px;
+    font-size: 18px;
+    border-radius: var(--radius);
+    color: white;
+    text-decoration: none;
+    border: 1px solid var(--neon-main);
+    background: rgba(164,76,255,0.15);
+    box-shadow: var(--shadow-neon);
+    transition: 0.3s;
+}
+
+.btn-glow:hover {
+    background: var(--neon-main);
+    box-shadow: var(--shadow-pink);
+}
+
+/* FEATURE CARDS ---------------------------------------------- */
+
+.features {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 30px;
+}
+
+.features .card {
+    padding: 25px;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    transition: 0.25s;
+}
+
+.features .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-neon);
+}
+
+.features .card h2 {
+    color: var(--neon-main);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* NEWS --------------------------------------------------------- */
+
+.news-item {
+    background: var(--bg-card);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-neon);
+}
+
+.news-item h2 {
+    color: var(--neon-pink);
+}
+
+.news-item small {
+    color: var(--text-muted);
+}
+
+/* FORUM -------------------------------------------------------- */
+
+.thread {
+    background: var(--bg-card);
+    padding: 20px;
+    border-radius: var(--radius);
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+.thread:hover {
+    box-shadow: var(--shadow-pink);
+    transform: translateX(5px);
+}
+
+/* GALLERY ------------------------------------------------------ */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+.gallery-img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-neon);
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    transition: 0.2s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-pink);
+}
+
+/* WIKI --------------------------------------------------------- */
+
+.wiki-item {
+    padding: 15px 20px;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    margin-bottom: 12px;
+}
+
+.wiki-item a {
+    color: var(--neon-main);
+    text-decoration: none;
+}
+
+.wiki-item a:hover {
+    color: var(--neon-pink);
+}
+
+/* TEAM -------------------------------------------------------- */
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 20px;
+}
+
+.team-card {
+    padding: 25px;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: var(--shadow-neon);
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-pink);
+}
+
+.team-card h2 {
+    color: var(--neon-main);
+}
+
+/* CREATOR ----------------------------------------------------- */
+
+.creator-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 20px;
+}
+
+.creator-card {
+    padding: 25px;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-neon);
+}
+
+.creator-card p {
+    color: var(--text-muted);
+}
+
+/* STATUS CARDS ----------------------------------------------- */
+
+.status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 25px;
+}
+
+.status-grid .card {
+    padding: 25px;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-neon);
+}
+
+/* FOOTER ------------------------------------------------------- */
+
+.wl-footer {
+    padding: 30px;
+    text-align: center;
+    color: var(--text-muted);
+    margin-top: 60px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.form-box {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: var(--radius);
+    margin-top: 20px;
+    box-shadow: var(--shadow-neon);
+}
+
+.form-box label {
+    display: block;
+    margin-top: 15px;
+    color: var(--neon-main);
+    font-weight: 600;
+}
+
+.input, .textarea {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    border-radius: var(--radius);
+    border: 1px solid var(--neon-main);
+    background: rgba(20,20,30,0.6);
+    color: white;
+}
+
+.textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-actions {
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    background: rgba(20,20,30,0.5);
+    padding: 8px;
+    border-radius: var(--radius);
+}
+
+.delete-btn {
+    color: #ff4b4b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.delete-btn:hover {
+    color: #ff0000;
+    text-shadow: 0 0 8px red;
+}
+
+.wiki-content {
+    background: var(--bg-card);
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-neon);
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+}
+
+.delete-btn {
+    background: rgba(255,0,0,0.2);
+    padding: 10px 15px;
+    border-radius: var(--radius);
+    color: #ff5555;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.delete-btn:hover {
+    background: rgba(255,0,0,0.4);
+    color: #ff0000;
+    box-shadow: 0 0 15px red;
+}
+
+.team-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 3px solid var(--neon-main);
+    box-shadow: var(--shadow-neon);
+}
+
+.team-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.creator-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--neon-main);
+    box-shadow: var(--shadow-neon);
+    margin-bottom: 15px;
+}
+
+.creator-links {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.clink {
+    padding: 8px 12px;
+    border-radius: var(--radius);
+    background: rgba(20,20,30,0.6);
+    color: var(--neon-main);
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid var(--neon-main);
+    transition: 0.2s;
+}
+
+.clink:hover {
+    background: var(--neon-main);
+    color: white;
+    box-shadow: var(--shadow-neon);
+}
