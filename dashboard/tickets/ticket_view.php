@@ -42,6 +42,7 @@ $statusColors = [
 ?>
 
 <h2>🎫 Ticket #<?= $ticket_id ?></h2>
+<?php include "parts/server_selector.php"; ?>
 <?php include "parts/agent_badges.php"; ?>
 
 <div class="ticket-header">
@@ -774,3 +775,4 @@ loadLogs();
 
 <?php include "parts/ticket_live_updates.php"; ?>
 <?php include "../footer.php"; ?>
+
